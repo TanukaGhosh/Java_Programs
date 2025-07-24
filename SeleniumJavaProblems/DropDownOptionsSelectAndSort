@@ -1,0 +1,15 @@
+webDriver driver= new ChromeDriver();
+driver.get("https://testautomationpractice.blogspot.com/");
+WebElement dropdownElement=driver.findByElements(By.xpath("//input[@id='comboBox']"));
+Select select = new select(dropdownElement);
+
+List<WebElement> options= select.getOptions();
+List<String> contents=new ArrayList<>();
+for(WebElemnt option: options){
+    content.add(option.getText());
+
+}
+Collections.sort(contents);
+for(String content:contents){
+    System.out.println(option);
+}
