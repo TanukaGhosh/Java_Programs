@@ -1,3 +1,7 @@
+package src.com.example.demo;
+import java.util.HashMap;
+import java.util.Map;
+
 public class CountPairs {
     public static int getPairsCount(int[] arr, int sum) {
         Map<Integer, Integer> map = new HashMap<>();
